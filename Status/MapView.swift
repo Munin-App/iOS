@@ -17,6 +17,7 @@ class MapView: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var mapView: MKMapView!
     
     var locationManager:CLLocationManager?
+    var formatterISO8601: NSDateFormatter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,15 @@ class MapView: UIViewController, CLLocationManagerDelegate {
             locationManager?.startUpdatingLocation();
             
         }
+        
+        formatterISO8601 = {
+            let formatter = NSDateFormatter()
+            formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)
+            formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+            formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSX"
+            return formatter
+        }()
     }
     
     
@@ -44,6 +54,8 @@ class MapView: UIViewController, CLLocationManagerDelegate {
     }
     
     func logLocation(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        let timestamp = formatterISO8601?.stringFromDate(NSDate())
+
         latitudeLabel.text = latitude.description
         longitudeLabel.text = longitude.description
 
@@ -57,7 +69,7 @@ class MapView: UIViewController, CLLocationManagerDelegate {
         
         let request = NSMutableURLRequest(URL: NSURL(string: "http://<server>/locations/")!)
         request.HTTPMethod = "POST"
-        let postString = "lat=\(latitude)&long=\(longitude)"
+        let postString = "latitude=\(latitude)&longitude=\(longitude)&timestamp=\(timestamp!)"
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
             guard error == nil && data != nil else {                                                          // check for fundamental networking error
