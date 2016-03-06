@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8BC0F1C8C334700AA4F89 /* MapView.swift */; };
+		21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC1D1C8C382F00AA4F89 /* map.png */; };
+		21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */; };
+		21A8BC221C8C487400AA4F89 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC211C8C487400AA4F89 /* settings.png */; };
+		21A8BC241C8C515100AA4F89 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8BC231C8C515100AA4F89 /* SettingsView.swift */; };
 		21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */; };
-		21F1E9721C8BD0B600533DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E9711C8BD0B600533DC7 /* ViewController.swift */; };
 		21F1E9751C8BD0B600533DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9731C8BD0B600533DC7 /* Main.storyboard */; };
 		21F1E9771C8BD0B600533DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9761C8BD0B600533DC7 /* Assets.xcassets */; };
 		21F1E97A1C8BD0B600533DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9781C8BD0B600533DC7 /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21A8BC0F1C8C334700AA4F89 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		21A8BC1D1C8C382F00AA4F89 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		21A8BC211C8C487400AA4F89 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		21A8BC231C8C515100AA4F89 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		21F1E96C1C8BD0B600533DC7 /* Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Status.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21F1E9711C8BD0B600533DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21F1E9741C8BD0B600533DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21F1E9761C8BD0B600533DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21F1E9791C8BD0B600533DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,7 @@
 		21F1E9631C8BD0B600533DC7 = {
 			isa = PBXGroup;
 			children = (
+				21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */,
 				21F1E96E1C8BD0B600533DC7 /* Status */,
 				21F1E9831C8BD0B600533DC7 /* StatusTests */,
 				21F1E98E1C8BD0B600533DC7 /* StatusUITests */,
@@ -98,7 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */,
-				21F1E9711C8BD0B600533DC7 /* ViewController.swift */,
+				21A8BC231C8C515100AA4F89 /* SettingsView.swift */,
+				21A8BC1D1C8C382F00AA4F89 /* map.png */,
+				21A8BC211C8C487400AA4F89 /* settings.png */,
+				21A8BC0F1C8C334700AA4F89 /* MapView.swift */,
 				21F1E9731C8BD0B600533DC7 /* Main.storyboard */,
 				21F1E9761C8BD0B600533DC7 /* Assets.xcassets */,
 				21F1E9781C8BD0B600533DC7 /* LaunchScreen.storyboard */,
@@ -193,6 +206,15 @@
 				TargetAttributes = {
 					21F1E96B1C8BD0B600533DC7 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = SH52BQ2ZXA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					21F1E97F1C8BD0B600533DC7 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -229,6 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */,
+				21A8BC221C8C487400AA4F89 /* settings.png in Resources */,
 				21F1E97A1C8BD0B600533DC7 /* LaunchScreen.storyboard in Resources */,
 				21F1E9771C8BD0B600533DC7 /* Assets.xcassets in Resources */,
 				21F1E9751C8BD0B600533DC7 /* Main.storyboard in Resources */,
@@ -256,7 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F1E9721C8BD0B600533DC7 /* ViewController.swift in Sources */,
+				21A8BC241C8C515100AA4F89 /* SettingsView.swift in Sources */,
+				21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */,
 				21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +422,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Status/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.Status;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -408,10 +441,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Status/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.Status;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +523,7 @@
 				21F1E9961C8BD0B600533DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21F1E9971C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "StatusTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +532,7 @@
 				21F1E9991C8BD0B600533DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21F1E99A1C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "StatusUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +541,7 @@
 				21F1E99C1C8BD0B600533DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
