@@ -12,13 +12,12 @@
 		21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC1D1C8C382F00AA4F89 /* map.png */; };
 		21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */; };
 		21A8BC221C8C487400AA4F89 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC211C8C487400AA4F89 /* settings.png */; };
-		21A8BC241C8C515100AA4F89 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8BC231C8C515100AA4F89 /* SettingsView.swift */; };
 		21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */; };
 		21F1E9751C8BD0B600533DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9731C8BD0B600533DC7 /* Main.storyboard */; };
 		21F1E9771C8BD0B600533DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9761C8BD0B600533DC7 /* Assets.xcassets */; };
 		21F1E97A1C8BD0B600533DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9781C8BD0B600533DC7 /* LaunchScreen.storyboard */; };
-		21F1E9851C8BD0B600533DC7 /* StatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E9841C8BD0B600533DC7 /* StatusTests.swift */; };
-		21F1E9901C8BD0B600533DC7 /* StatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E98F1C8BD0B600533DC7 /* StatusUITests.swift */; };
+		21F1E9851C8BD0B600533DC7 /* MuninTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E9841C8BD0B600533DC7 /* MuninTests.swift */; };
+		21F1E9901C8BD0B600533DC7 /* MuninUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E98F1C8BD0B600533DC7 /* MuninUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,18 +43,17 @@
 		21A8BC1D1C8C382F00AA4F89 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		21A8BC211C8C487400AA4F89 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		21A8BC231C8C515100AA4F89 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		21F1E96C1C8BD0B600533DC7 /* Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Status.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F1E96C1C8BD0B600533DC7 /* Munin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Munin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F1E9741C8BD0B600533DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21F1E9761C8BD0B600533DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21F1E9791C8BD0B600533DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21F1E97B1C8BD0B600533DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21F1E9801C8BD0B600533DC7 /* StatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21F1E9841C8BD0B600533DC7 /* StatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTests.swift; sourceTree = "<group>"; };
+		21F1E9801C8BD0B600533DC7 /* Munin.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Munin.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F1E9841C8BD0B600533DC7 /* MuninTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuninTests.swift; sourceTree = "<group>"; };
 		21F1E9861C8BD0B600533DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21F1E98B1C8BD0B600533DC7 /* StatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21F1E98F1C8BD0B600533DC7 /* StatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUITests.swift; sourceTree = "<group>"; };
+		21F1E98B1C8BD0B600533DC7 /* Munin.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Munin.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F1E98F1C8BD0B600533DC7 /* MuninUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuninUITests.swift; sourceTree = "<group>"; };
 		21F1E9911C8BD0B600533DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,9 +89,9 @@
 			children = (
 				21247F791C8F785B00C32DFB /* Locksmith.framework */,
 				21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */,
-				21F1E96E1C8BD0B600533DC7 /* Status */,
-				21F1E9831C8BD0B600533DC7 /* StatusTests */,
-				21F1E98E1C8BD0B600533DC7 /* StatusUITests */,
+				21F1E96E1C8BD0B600533DC7 /* Munin */,
+				21F1E9831C8BD0B600533DC7 /* MuninTests */,
+				21F1E98E1C8BD0B600533DC7 /* MuninUITests */,
 				21F1E96D1C8BD0B600533DC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,18 +99,17 @@
 		21F1E96D1C8BD0B600533DC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21F1E96C1C8BD0B600533DC7 /* Status.app */,
-				21F1E9801C8BD0B600533DC7 /* StatusTests.xctest */,
-				21F1E98B1C8BD0B600533DC7 /* StatusUITests.xctest */,
+				21F1E96C1C8BD0B600533DC7 /* Munin.app */,
+				21F1E9801C8BD0B600533DC7 /* Munin.xctest */,
+				21F1E98B1C8BD0B600533DC7 /* Munin.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21F1E96E1C8BD0B600533DC7 /* Status */ = {
+		21F1E96E1C8BD0B600533DC7 /* Munin */ = {
 			isa = PBXGroup;
 			children = (
 				21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */,
-				21A8BC231C8C515100AA4F89 /* SettingsView.swift */,
 				21A8BC1D1C8C382F00AA4F89 /* map.png */,
 				21A8BC211C8C487400AA4F89 /* settings.png */,
 				21A8BC0F1C8C334700AA4F89 /* MapView.swift */,
@@ -121,33 +118,33 @@
 				21F1E9781C8BD0B600533DC7 /* LaunchScreen.storyboard */,
 				21F1E97B1C8BD0B600533DC7 /* Info.plist */,
 			);
-			path = Status;
+			path = Munin;
 			sourceTree = "<group>";
 		};
-		21F1E9831C8BD0B600533DC7 /* StatusTests */ = {
+		21F1E9831C8BD0B600533DC7 /* MuninTests */ = {
 			isa = PBXGroup;
 			children = (
-				21F1E9841C8BD0B600533DC7 /* StatusTests.swift */,
+				21F1E9841C8BD0B600533DC7 /* MuninTests.swift */,
 				21F1E9861C8BD0B600533DC7 /* Info.plist */,
 			);
-			path = StatusTests;
+			path = MuninTests;
 			sourceTree = "<group>";
 		};
-		21F1E98E1C8BD0B600533DC7 /* StatusUITests */ = {
+		21F1E98E1C8BD0B600533DC7 /* MuninUITests */ = {
 			isa = PBXGroup;
 			children = (
-				21F1E98F1C8BD0B600533DC7 /* StatusUITests.swift */,
+				21F1E98F1C8BD0B600533DC7 /* MuninUITests.swift */,
 				21F1E9911C8BD0B600533DC7 /* Info.plist */,
 			);
-			path = StatusUITests;
+			path = MuninUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21F1E96B1C8BD0B600533DC7 /* Status */ = {
+		21F1E96B1C8BD0B600533DC7 /* Munin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21F1E9941C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "Status" */;
+			buildConfigurationList = 21F1E9941C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "Munin" */;
 			buildPhases = (
 				21F1E9681C8BD0B600533DC7 /* Sources */,
 				21F1E9691C8BD0B600533DC7 /* Frameworks */,
@@ -158,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = Status;
+			name = Munin;
 			productName = Status;
-			productReference = 21F1E96C1C8BD0B600533DC7 /* Status.app */;
+			productReference = 21F1E96C1C8BD0B600533DC7 /* Munin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		21F1E97F1C8BD0B600533DC7 /* StatusTests */ = {
+		21F1E97F1C8BD0B600533DC7 /* MuninTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21F1E9971C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "StatusTests" */;
+			buildConfigurationList = 21F1E9971C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "MuninTests" */;
 			buildPhases = (
 				21F1E97C1C8BD0B600533DC7 /* Sources */,
 				21F1E97D1C8BD0B600533DC7 /* Frameworks */,
@@ -176,14 +173,14 @@
 			dependencies = (
 				21F1E9821C8BD0B600533DC7 /* PBXTargetDependency */,
 			);
-			name = StatusTests;
+			name = MuninTests;
 			productName = StatusTests;
-			productReference = 21F1E9801C8BD0B600533DC7 /* StatusTests.xctest */;
+			productReference = 21F1E9801C8BD0B600533DC7 /* Munin.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		21F1E98A1C8BD0B600533DC7 /* StatusUITests */ = {
+		21F1E98A1C8BD0B600533DC7 /* MuninUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21F1E99A1C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "StatusUITests" */;
+			buildConfigurationList = 21F1E99A1C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "MuninUITests" */;
 			buildPhases = (
 				21F1E9871C8BD0B600533DC7 /* Sources */,
 				21F1E9881C8BD0B600533DC7 /* Frameworks */,
@@ -194,9 +191,9 @@
 			dependencies = (
 				21F1E98D1C8BD0B600533DC7 /* PBXTargetDependency */,
 			);
-			name = StatusUITests;
+			name = MuninUITests;
 			productName = StatusUITests;
-			productReference = 21F1E98B1C8BD0B600533DC7 /* StatusUITests.xctest */;
+			productReference = 21F1E98B1C8BD0B600533DC7 /* Munin.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 21F1E9671C8BD0B600533DC7 /* Build configuration list for PBXProject "Status" */;
+			buildConfigurationList = 21F1E9671C8BD0B600533DC7 /* Build configuration list for PBXProject "Munin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21F1E96B1C8BD0B600533DC7 /* Status */,
-				21F1E97F1C8BD0B600533DC7 /* StatusTests */,
-				21F1E98A1C8BD0B600533DC7 /* StatusUITests */,
+				21F1E96B1C8BD0B600533DC7 /* Munin */,
+				21F1E97F1C8BD0B600533DC7 /* MuninTests */,
+				21F1E98A1C8BD0B600533DC7 /* MuninUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A8BC241C8C515100AA4F89 /* SettingsView.swift in Sources */,
 				21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */,
 				21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */,
 			);
@@ -312,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F1E9851C8BD0B600533DC7 /* StatusTests.swift in Sources */,
+				21F1E9851C8BD0B600533DC7 /* MuninTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F1E9901C8BD0B600533DC7 /* StatusUITests.swift in Sources */,
+				21F1E9901C8BD0B600533DC7 /* MuninUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,12 +325,12 @@
 /* Begin PBXTargetDependency section */
 		21F1E9821C8BD0B600533DC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21F1E96B1C8BD0B600533DC7 /* Status */;
+			target = 21F1E96B1C8BD0B600533DC7 /* Munin */;
 			targetProxy = 21F1E9811C8BD0B600533DC7 /* PBXContainerItemProxy */;
 		};
 		21F1E98D1C8BD0B600533DC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21F1E96B1C8BD0B600533DC7 /* Status */;
+			target = 21F1E96B1C8BD0B600533DC7 /* Munin */;
 			targetProxy = 21F1E98C1C8BD0B600533DC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -450,10 +446,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Status/Info.plist;
+				INFOPLIST_FILE = Munin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.Status;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muninapp.MuniniOS;
+				PRODUCT_NAME = Munin;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,10 +465,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Status/Info.plist;
+				INFOPLIST_FILE = Munin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.Status;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muninapp.MuniniOS;
+				PRODUCT_NAME = Munin;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -485,8 +481,8 @@
 				INFOPLIST_FILE = StatusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.StatusTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Status.app/Status";
+				PRODUCT_NAME = Munin;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Munin.app/Munin";
 			};
 			name = Debug;
 		};
@@ -497,8 +493,8 @@
 				INFOPLIST_FILE = StatusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.StatusTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Status.app/Status";
+				PRODUCT_NAME = Munin;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Munin.app/Munin";
 			};
 			name = Release;
 		};
@@ -508,7 +504,7 @@
 				INFOPLIST_FILE = StatusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.StatusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Munin;
 				TEST_TARGET_NAME = Status;
 				USES_XCTRUNNER = YES;
 			};
@@ -520,7 +516,7 @@
 				INFOPLIST_FILE = StatusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.citruspi.StatusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Munin;
 				TEST_TARGET_NAME = Status;
 				USES_XCTRUNNER = YES;
 			};
@@ -529,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21F1E9671C8BD0B600533DC7 /* Build configuration list for PBXProject "Status" */ = {
+		21F1E9671C8BD0B600533DC7 /* Build configuration list for PBXProject "Munin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21F1E9921C8BD0B600533DC7 /* Debug */,
@@ -538,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21F1E9941C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "Status" */ = {
+		21F1E9941C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "Munin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21F1E9951C8BD0B600533DC7 /* Debug */,
@@ -547,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21F1E9971C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "StatusTests" */ = {
+		21F1E9971C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "MuninTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21F1E9981C8BD0B600533DC7 /* Debug */,
@@ -556,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21F1E99A1C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "StatusUITests" */ = {
+		21F1E99A1C8BD0B600533DC7 /* Build configuration list for PBXNativeTarget "MuninUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21F1E99B1C8BD0B600533DC7 /* Debug */,

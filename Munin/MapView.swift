@@ -67,7 +67,7 @@ class MapView: UIViewController, CLLocationManagerDelegate {
         
         mapView.setRegion(mapRegion, animated: true)
         
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://<server>/locations/")!)
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://129.21.50.56:9009/locations/")!)
         request.HTTPMethod = "POST"
         let postString = "latitude=\(latitude)&longitude=\(longitude)&timestamp=\(timestamp!)"
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)

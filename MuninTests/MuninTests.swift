@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import Status
+@testable import Munin
 
-class StatusTests: XCTestCase {
+class MuninTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

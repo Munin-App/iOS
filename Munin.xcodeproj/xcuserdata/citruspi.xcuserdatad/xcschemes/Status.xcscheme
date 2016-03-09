@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F1E96B1C8BD0B600533DC7"
-               BuildableName = "Status.app"
-               BlueprintName = "Status"
-               ReferencedContainer = "container:Status.xcodeproj">
+               BuildableName = "Munin.app"
+               BlueprintName = "Munin"
+               ReferencedContainer = "container:Munin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F1E97F1C8BD0B600533DC7"
-               BuildableName = "StatusTests.xctest"
-               BlueprintName = "StatusTests"
-               ReferencedContainer = "container:Status.xcodeproj">
+               BuildableName = "Munin.xctest"
+               BlueprintName = "MuninTests"
+               ReferencedContainer = "container:Munin.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F1E98A1C8BD0B600533DC7"
-               BuildableName = "StatusUITests.xctest"
-               BlueprintName = "StatusUITests"
-               ReferencedContainer = "container:Status.xcodeproj">
+               BuildableName = "Munin.xctest"
+               BlueprintName = "MuninUITests"
+               ReferencedContainer = "container:Munin.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F1E96B1C8BD0B600533DC7"
-            BuildableName = "Status.app"
-            BlueprintName = "Status"
-            ReferencedContainer = "container:Status.xcodeproj">
+            BuildableName = "Munin.app"
+            BlueprintName = "Munin"
+            ReferencedContainer = "container:Munin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F1E96B1C8BD0B600533DC7"
-            BuildableName = "Status.app"
-            BlueprintName = "Status"
-            ReferencedContainer = "container:Status.xcodeproj">
+            BuildableName = "Munin.app"
+            BlueprintName = "Munin"
+            ReferencedContainer = "container:Munin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F1E96B1C8BD0B600533DC7"
-            BuildableName = "Status.app"
-            BlueprintName = "Status"
-            ReferencedContainer = "container:Status.xcodeproj">
+            BuildableName = "Munin.app"
+            BlueprintName = "Munin"
+            ReferencedContainer = "container:Munin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
