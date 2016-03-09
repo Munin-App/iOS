@@ -10,6 +10,7 @@
 		21247F7A1C8F785B00C32DFB /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21247F791C8F785B00C32DFB /* Locksmith.framework */; };
 		21437B151C90C249004AC526 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21437B141C90C249004AC526 /* SignInView.swift */; };
 		21437B171C90C881004AC526 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 21437B161C90C881004AC526 /* logo.png */; };
+		21437B191C90CFCB004AC526 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21437B181C90CFCB004AC526 /* Alamofire.framework */; };
 		21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8BC0F1C8C334700AA4F89 /* MapView.swift */; };
 		21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC1D1C8C382F00AA4F89 /* map.png */; };
 		21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */; };
@@ -43,6 +44,7 @@
 		21247F791C8F785B00C32DFB /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
 		21437B141C90C249004AC526 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		21437B161C90C881004AC526 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		21437B181C90CFCB004AC526 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		21A8BC0F1C8C334700AA4F89 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21A8BC1D1C8C382F00AA4F89 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -67,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */,
+				21437B191C90CFCB004AC526 /* Alamofire.framework in Frameworks */,
 				21247F7A1C8F785B00C32DFB /* Locksmith.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +94,7 @@
 		21F1E9631C8BD0B600533DC7 = {
 			isa = PBXGroup;
 			children = (
+				21437B181C90CFCB004AC526 /* Alamofire.framework */,
 				21247F791C8F785B00C32DFB /* Locksmith.framework */,
 				21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */,
 				21F1E96E1C8BD0B600533DC7 /* Munin */,
@@ -292,6 +296,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 			);
