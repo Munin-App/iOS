@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21247F7A1C8F785B00C32DFB /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21247F791C8F785B00C32DFB /* Locksmith.framework */; };
+		21437B151C90C249004AC526 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21437B141C90C249004AC526 /* SignInView.swift */; };
+		21437B171C90C881004AC526 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 21437B161C90C881004AC526 /* logo.png */; };
 		21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8BC0F1C8C334700AA4F89 /* MapView.swift */; };
 		21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC1D1C8C382F00AA4F89 /* map.png */; };
 		21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		21247F791C8F785B00C32DFB /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
+		21437B141C90C249004AC526 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		21437B161C90C881004AC526 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		21A8BC0F1C8C334700AA4F89 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21A8BC1D1C8C382F00AA4F89 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -111,9 +115,11 @@
 			children = (
 				21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */,
 				21A8BC1D1C8C382F00AA4F89 /* map.png */,
+				21437B161C90C881004AC526 /* logo.png */,
 				21A8BC211C8C487400AA4F89 /* settings.png */,
 				21A8BC0F1C8C334700AA4F89 /* MapView.swift */,
 				21F1E9731C8BD0B600533DC7 /* Main.storyboard */,
+				21437B141C90C249004AC526 /* SignInView.swift */,
 				21F1E9761C8BD0B600533DC7 /* Assets.xcassets */,
 				21F1E9781C8BD0B600533DC7 /* LaunchScreen.storyboard */,
 				21F1E97B1C8BD0B600533DC7 /* Info.plist */,
@@ -255,6 +261,7 @@
 			files = (
 				21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */,
 				21A8BC221C8C487400AA4F89 /* settings.png in Resources */,
+				21437B171C90C881004AC526 /* logo.png in Resources */,
 				21F1E97A1C8BD0B600533DC7 /* LaunchScreen.storyboard in Resources */,
 				21F1E9771C8BD0B600533DC7 /* Assets.xcassets in Resources */,
 				21F1E9751C8BD0B600533DC7 /* Main.storyboard in Resources */,
@@ -299,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21437B151C90C249004AC526 /* SignInView.swift in Sources */,
 				21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */,
 				21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */,
 			);
