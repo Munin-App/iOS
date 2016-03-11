@@ -41,6 +41,16 @@ func requestAccountTokenWithPassword(username: String, password: String, callbac
     }
 }
 
+func userIsSignedIn() -> Bool {
+    if loadAccountInformation("username") != nil {
+        if loadAccountInformation("token") != nil {
+            return true
+        }
+    }
+
+    return false
+}
+
 func loadAccountInformation(key: String) -> AnyObject? {
     if let account = Locksmith.loadDataForUserAccount("munin") {
         if account[key] != nil {
