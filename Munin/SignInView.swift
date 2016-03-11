@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignInView: UIViewController, UITextFieldDelegate {
     @IBOutlet var usernameField: UITextField!
@@ -17,15 +18,30 @@ class SignInView: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        if userIsSignedIn() {
+            self.performSegueWithIdentifier("showMainApplication", sender: nil)
+        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         usernameField.delegate = self
         passwordField.delegate = self
     }
     
     @IBAction func signIn() {
-        print("Signing In")
+        if let username = usernameField.text {
+            if let password = passwordField.text {
+                requestAccountTokenWithPassword(username, password: password) { (success) -> Void in
+                    if success {
+                        self.performSegueWithIdentifier("showMainApplication", sender: nil)
+                    }
+                }
+            }
+        }
     }
 }
-    

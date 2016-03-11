@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class MainViewController: UITabBarController {
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if !userIsSignedIn() {
+            self.performSegueWithIdentifier("segueToSignInView", sender: nil)
+        }
+    }
+}
