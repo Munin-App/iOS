@@ -21,7 +21,7 @@ func requestAccountTokenWithPassword(username: String, password: String, callbac
         "read_only": false
     ]
 
-    Alamofire.request(.POST, "http://10.105.16.8:8000/tokens/", parameters: parameters)
+    Alamofire.request(.POST, "http://api.muninapp.com/tokens/", parameters: parameters as? [String : AnyObject])
         .responseJSON { response in
             debugPrint(response)
 
