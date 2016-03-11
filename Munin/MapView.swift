@@ -67,25 +67,15 @@ class MapView: UIViewController, CLLocationManagerDelegate {
         
         mapView.setRegion(mapRegion, animated: true)
         
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://129.21.50.56:9009/locations/")!)
-        request.HTTPMethod = "POST"
-        let postString = "latitude=\(latitude)&longitude=\(longitude)&timestamp=\(timestamp!)"
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-            guard error == nil && data != nil else {                                                          // check for fundamental networking error
-                print("error=\(error)")
-                return
-            }
-            
-            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
-                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(response)")
-            }
-            
-            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print("responseString = \(responseString)")
+        let data = [
+            "timestamp": timestamp!,
+            "latitude": latitude,
+            "longitude": longitude
+        ]
+        
+        recordDataPoint("locations", data: data as! [String: AnyObject])  { (success) -> Void in
+            print(success)
         }
-        task.resume()
     }
     
     
