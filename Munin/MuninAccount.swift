@@ -17,7 +17,8 @@ func requestAccountTokenWithPassword(username: String, password: String, callbac
     let parameters = [
         "username": username,
         "password": password,
-        "name": "Munin iOS - \(UIDevice.currentDevice().name)"
+        "name": "Munin iOS - \(UIDevice.currentDevice().name)",
+        "read_only": false
     ]
 
     Alamofire.request(.POST, "http://10.105.16.8:8000/tokens/", parameters: parameters)
