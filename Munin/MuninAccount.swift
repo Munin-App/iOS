@@ -70,3 +70,23 @@ func saveAccountInformation(dict: [String: AnyObject]) -> Bool {
         return false
     }
 }
+
+func recordDataPoint(endpoint: String, data: [String: AnyObject], callback: ((success: Bool)->Void)?) {
+    var success = false
+
+    if let token = loadAccountInformation("token") as? String {
+        let headers = [
+            "X-Authorization": token
+        ]
+
+        debugPrint(data)
+        debugPrint(headers)
+
+        Alamofire.request(.POST, "http://api.muninapp.com/\(endpoint)/", parameters: data, headers: headers)
+            .responseJSON { response in
+                debugPrint(response)
+
+                callback?(success: success)
+        }
+    }
+}
