@@ -10,6 +10,7 @@ import UIKit
 import XCGLogger
 
 let log = XCGLogger.defaultInstance()
+let locationData = LocationManager()
 
 var formatterISO8601: NSDateFormatter?
 
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+        
         formatterISO8601 = {
             let formatter = NSDateFormatter()
             formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)
