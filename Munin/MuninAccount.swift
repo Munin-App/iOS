@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import Locksmith
 import Alamofire
 import XCGLogger
+import KeychainSwift
 
+let keychain = KeychainSwift()
 
 func requestAccountTokenWithPassword(username: String, password: String, callback: ((success: Bool)->Void)?) {
     var success = false
@@ -31,11 +32,19 @@ func requestAccountTokenWithPassword(username: String, password: String, callbac
             if let token = response.objectForKey("token") as? String {
                 success = true
                 print(username)
-                if !saveAccountInformation(["username": username, "token": token]) {
-                    NSLog("Failed to save username to keychain")
+
+                if !saveAccountInformation("username", value: username) {
+                    log.error("Failed to save username to the keychain")
                     success = false
                 } else {
-                    NSLog("Saved account information to the keychain")
+                    log.info("Saved username to the keychain")
+                }
+
+                if !saveAccountInformation("token", value: token) {
+                    log.error("Failed to save token to the keychain")
+                    success = false
+                } else {
+                    log.info("Saved token to the keychain")
                 }
             }
 
@@ -54,22 +63,20 @@ func userIsSignedIn() -> Bool {
 }
 
 func loadAccountInformation(key: String) -> AnyObject? {
-    if let account = Locksmith.loadDataForUserAccount("munin") {
-        if account[key] != nil {
-            return account[key]
-        }
+    if let result = keychain.get(key) {
+        return result
     }
     
     return nil
 }
 
-func saveAccountInformation(dict: [String: AnyObject]) -> Bool {
-    do {
-        try Locksmith.updateData(dict, forUserAccount: "munin")
+func saveAccountInformation(key: String, value: String) -> Bool {
+    // This is bad and I should feel bad.
+    if keychain.set(value, forKey: key, withAccess: .AccessibleAlways) {
         return true
-    } catch {
-        return false
     }
+
+    return false
 }
 
 func recordDataPoint(endpoint: String, data: [String: AnyObject], callback: ((success: Bool)->Void)?) {
