@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import XCGLogger
 
 class SignInView: UIViewController, UITextFieldDelegate {
     @IBOutlet var usernameField: UITextField!

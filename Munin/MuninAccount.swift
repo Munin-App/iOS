@@ -9,6 +9,7 @@
 import UIKit
 import Locksmith
 import Alamofire
+import XCGLogger
 
 
 func requestAccountTokenWithPassword(username: String, password: String, callback: ((success: Bool)->Void)?) {
@@ -84,7 +85,8 @@ func recordDataPoint(endpoint: String, data: [String: AnyObject], callback: ((su
 
         Alamofire.request(.POST, "http://api.muninapp.com/\(endpoint)/", parameters: data, headers: headers)
             .responseJSON { response in
-                debugPrint(response)
+                log.debug(response.debugDescription)
+                log.info(response.description)
 
                 callback?(success: success)
         }

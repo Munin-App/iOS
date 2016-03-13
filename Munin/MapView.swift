@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import XCGLogger
 
 class MapView: UIViewController, CLLocationManagerDelegate {
     
@@ -54,6 +55,8 @@ class MapView: UIViewController, CLLocationManagerDelegate {
     }
     
     func logLocation(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        log.info("Location Updated: \(latitude), \(longitude)")
+        
         let timestamp = formatterISO8601?.stringFromDate(NSDate())
 
         latitudeLabel.text = latitude.description
