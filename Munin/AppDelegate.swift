@@ -11,25 +11,30 @@ import XCGLogger
 
 let log = XCGLogger.defaultInstance()
 
+var formatterISO8601: NSDateFormatter?
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        let formatter = NSDateFormatter()
-        formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)
-        formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSX"
+
+        formatterISO8601 = {
+            let formatter = NSDateFormatter()
+            formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)
+            formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+            formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSX"
+            return formatter
+        }()
         
         let cacheDirectory: NSURL = {
             let urls = NSFileManager.defaultManager().URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask)
             return urls[urls.endIndex - 1]
         }()
         
-        let timestamp = formatter.stringFromDate(NSDate())
+        let timestamp = formatterISO8601?.stringFromDate(NSDate())
         
         let logPath: NSURL = cacheDirectory.URLByAppendingPathComponent("log-\(timestamp).txt")
         
