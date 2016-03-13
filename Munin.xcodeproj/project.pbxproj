@@ -13,10 +13,12 @@
 		21437B191C90CFCB004AC526 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21437B181C90CFCB004AC526 /* Alamofire.framework */; };
 		21437B1B1C924145004AC526 /* MuninAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21437B1A1C924145004AC526 /* MuninAccount.swift */; };
 		21437B1D1C92482A004AC526 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21437B1C1C92482A004AC526 /* MainViewController.swift */; };
+		219E3EB51C95765D00B5722B /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219E3EB41C95765D00B5722B /* KeychainSwift.framework */; };
 		21A8BC101C8C334700AA4F89 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8BC0F1C8C334700AA4F89 /* MapView.swift */; };
 		21A8BC1E1C8C382F00AA4F89 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC1D1C8C382F00AA4F89 /* map.png */; };
 		21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */; };
 		21A8BC221C8C487400AA4F89 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A8BC211C8C487400AA4F89 /* settings.png */; };
+		21D52D141C939CA900268AA2 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D52D131C939CA900268AA2 /* XCGLogger.framework */; };
 		21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */; };
 		21F1E9751C8BD0B600533DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9731C8BD0B600533DC7 /* Main.storyboard */; };
 		21F1E9771C8BD0B600533DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F1E9761C8BD0B600533DC7 /* Assets.xcassets */; };
@@ -49,10 +51,13 @@
 		21437B181C90CFCB004AC526 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		21437B1A1C924145004AC526 /* MuninAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuninAccount.swift; sourceTree = "<group>"; };
 		21437B1C1C92482A004AC526 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		219E3EB21C95554800B5722B /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		219E3EB41C95765D00B5722B /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
 		21A8BC0F1C8C334700AA4F89 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21A8BC1D1C8C382F00AA4F89 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		21A8BC211C8C487400AA4F89 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		21D52D131C939CA900268AA2 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 		21F1E96C1C8BD0B600533DC7 /* Munin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Munin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F1E9741C8BD0B600533DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +80,8 @@
 				21A8BC201C8C3C9100AA4F89 /* MapKit.framework in Frameworks */,
 				21437B191C90CFCB004AC526 /* Alamofire.framework in Frameworks */,
 				21247F7A1C8F785B00C32DFB /* Locksmith.framework in Frameworks */,
+				21D52D141C939CA900268AA2 /* XCGLogger.framework in Frameworks */,
+				219E3EB51C95765D00B5722B /* KeychainSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +105,9 @@
 		21F1E9631C8BD0B600533DC7 = {
 			isa = PBXGroup;
 			children = (
+				219E3EB41C95765D00B5722B /* KeychainSwift.framework */,
+				219E3EB21C95554800B5722B /* SwiftyUserDefaults.framework */,
+				21D52D131C939CA900268AA2 /* XCGLogger.framework */,
 				21437B181C90CFCB004AC526 /* Alamofire.framework */,
 				21247F791C8F785B00C32DFB /* Locksmith.framework */,
 				21A8BC1F1C8C3C9100AA4F89 /* MapKit.framework */,
@@ -303,6 +313,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
 			);
 			outputPaths = (
 			);
