@@ -260,6 +260,33 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="bL9-d6-0n3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="kyQ-Lq-rDE">
+                                        <rect key="frame" x="0.0" y="267" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kyQ-Lq-rDE" id="vwm-mW-eRt">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8u-xP-7Bl">
+                                                    <rect key="frame" x="127" y="11" width="67" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d8u-xP-7Bl" firstAttribute="centerX" secondItem="vwm-mW-eRt" secondAttribute="centerX" id="GjQ-YZ-D3D"/>
+                                                <constraint firstItem="d8u-xP-7Bl" firstAttribute="centerY" secondItem="vwm-mW-eRt" secondAttribute="centerY" id="zv7-qy-Dtg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kdd-eV-d52" kind="push" identifier="segueToSignOutView" id="FZd-zD-rhB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="7Wg-hA-w4p" id="zv0-su-u68"/>
@@ -275,7 +302,45 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EQ-h6-GEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="153"/>
+            <point key="canvasLocation" x="1583" y="173"/>
+        </scene>
+        <!--Sign Out-->
+        <scene sceneID="JqQ-PC-vIZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HkZ-Wv-fhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="kdd-eV-d52" customClass="SignOutViewController" customModule="Munin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHW-4e-f6i"/>
+                        <viewControllerLayoutGuide type="bottom" id="njQ-5x-jay"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwm-gR-yvu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-hW-axI">
+                                <rect key="frame" x="118" y="269" width="85" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rPK-hW-axI" firstAttribute="centerY" secondItem="nwm-gR-yvu" secondAttribute="centerY" id="FEa-np-OL1"/>
+                            <constraint firstItem="rPK-hW-axI" firstAttribute="centerX" secondItem="nwm-gR-yvu" secondAttribute="centerX" id="SF4-6I-9r5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Out" id="ymc-Av-bCG">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="a5s-VL-DZ8"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="confirmButton" destination="rPK-hW-axI" id="uBk-eR-iln"/>
+                        <segue destination="eyu-EB-cvC" kind="modal" identifier="segueToSignInView" id="z8C-HN-vT9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2025" y="361"/>
         </scene>
         <!--Location-->
         <scene sceneID="aQm-BN-lu2">
@@ -411,5 +476,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BMr-he-pzs"/>
+        <segue reference="z8C-HN-vT9"/>
     </inferredMetricsTieBreakers>
 </document>
