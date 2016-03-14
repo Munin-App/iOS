@@ -27,6 +27,14 @@
 		21F940691C962A56009F4E47 /* pin-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F940671C962A56009F4E47 /* pin-marker.png */; };
 		21F9406A1C962A56009F4E47 /* pin-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F940681C962A56009F4E47 /* pin-marker@2x.png */; };
 		21F9406B1C962FA3009F4E47 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219E3EB21C95554800B5722B /* SwiftyUserDefaults.framework */; };
+		21F9406E1C9637DF009F4E47 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F9406C1C9637DF009F4E47 /* user.png */; };
+		21F9406F1C9637DF009F4E47 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F9406D1C9637DF009F4E47 /* user@2x.png */; };
+		21F940721C963813009F4E47 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F940711C963813009F4E47 /* AccountTableViewController.swift */; };
+		21F940741C963932009F4E47 /* MuninTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F940731C963932009F4E47 /* MuninTableViewController.swift */; };
+		21F940771C963CB4009F4E47 /* token.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F940751C963CB4009F4E47 /* token.png */; };
+		21F940781C963CB4009F4E47 /* token@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F940761C963CB4009F4E47 /* token@2x.png */; };
+		21F9407F1C963E17009F4E47 /* host.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F9407D1C963E17009F4E47 /* host.png */; };
+		21F940801C963E17009F4E47 /* host@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F9407E1C963E17009F4E47 /* host@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +81,14 @@
 		21F9404D1C961749009F4E47 /* MuninNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuninNavigationController.swift; sourceTree = "<group>"; };
 		21F940671C962A56009F4E47 /* pin-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-marker.png"; sourceTree = "<group>"; };
 		21F940681C962A56009F4E47 /* pin-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-marker@2x.png"; sourceTree = "<group>"; };
+		21F9406C1C9637DF009F4E47 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		21F9406D1C9637DF009F4E47 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		21F940711C963813009F4E47 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		21F940731C963932009F4E47 /* MuninTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuninTableViewController.swift; sourceTree = "<group>"; };
+		21F940751C963CB4009F4E47 /* token.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token.png; sourceTree = "<group>"; };
+		21F940761C963CB4009F4E47 /* token@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "token@2x.png"; sourceTree = "<group>"; };
+		21F9407D1C963E17009F4E47 /* host.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = host.png; sourceTree = "<group>"; };
+		21F9407E1C963E17009F4E47 /* host@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "host@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +151,7 @@
 		21F1E96E1C8BD0B600533DC7 /* Munin */ = {
 			isa = PBXGroup;
 			children = (
+				21F940701C9637EE009F4E47 /* Account */,
 				21F940611C9628FA009F4E47 /* Services */,
 				21F1E96F1C8BD0B600533DC7 /* AppDelegate.swift */,
 				21437B161C90C881004AC526 /* logo.png */,
@@ -145,6 +162,7 @@
 				21F1E9761C8BD0B600533DC7 /* Assets.xcassets */,
 				21F1E9781C8BD0B600533DC7 /* LaunchScreen.storyboard */,
 				21F1E97B1C8BD0B600533DC7 /* Info.plist */,
+				21F940731C963932009F4E47 /* MuninTableViewController.swift */,
 			);
 			path = Munin;
 			sourceTree = "<group>";
@@ -184,6 +202,20 @@
 				21F940681C962A56009F4E47 /* pin-marker@2x.png */,
 			);
 			name = Location;
+			sourceTree = "<group>";
+		};
+		21F940701C9637EE009F4E47 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				21F9406C1C9637DF009F4E47 /* user.png */,
+				21F9406D1C9637DF009F4E47 /* user@2x.png */,
+				21F940751C963CB4009F4E47 /* token.png */,
+				21F940761C963CB4009F4E47 /* token@2x.png */,
+				21F9407D1C963E17009F4E47 /* host.png */,
+				21F9407E1C963E17009F4E47 /* host@2x.png */,
+				21F940711C963813009F4E47 /* AccountTableViewController.swift */,
+			);
+			name = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,10 +332,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F9407F1C963E17009F4E47 /* host.png in Resources */,
+				21F9406E1C9637DF009F4E47 /* user.png in Resources */,
+				21F940781C963CB4009F4E47 /* token@2x.png in Resources */,
 				21F9406A1C962A56009F4E47 /* pin-marker@2x.png in Resources */,
 				21F940691C962A56009F4E47 /* pin-marker.png in Resources */,
+				21F940801C963E17009F4E47 /* host@2x.png in Resources */,
 				21437B171C90C881004AC526 /* logo.png in Resources */,
+				21F9406F1C9637DF009F4E47 /* user@2x.png in Resources */,
 				21F1E97A1C8BD0B600533DC7 /* LaunchScreen.storyboard in Resources */,
+				21F940771C963CB4009F4E47 /* token.png in Resources */,
 				21F1E9771C8BD0B600533DC7 /* Assets.xcassets in Resources */,
 				21F1E9751C8BD0B600533DC7 /* Main.storyboard in Resources */,
 			);
@@ -353,10 +391,12 @@
 			files = (
 				21437B151C90C249004AC526 /* SignInView.swift in Sources */,
 				21F9404A1C961181009F4E47 /* LocationTableViewController.swift in Sources */,
+				21F940721C963813009F4E47 /* AccountTableViewController.swift in Sources */,
 				21F9404C1C961552009F4E47 /* LocationManager.swift in Sources */,
 				21F1E9701C8BD0B600533DC7 /* AppDelegate.swift in Sources */,
 				21F9404E1C961749009F4E47 /* MuninNavigationController.swift in Sources */,
 				21437B1B1C924145004AC526 /* MuninAccount.swift in Sources */,
+				21F940741C963932009F4E47 /* MuninTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

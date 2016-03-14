@@ -12,6 +12,7 @@ class MuninNavigationController: UINavigationController {
     override func viewWillAppear(animated: Bool) {
         if userIsSignedIn() {
             super.viewWillAppear(animated)
+
             locationData.setup()
         } else {
             self.performSegueWithIdentifier("segueToSignInView", sender: nil)
