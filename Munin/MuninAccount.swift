@@ -23,7 +23,7 @@ func requestAccountTokenWithPassword(username: String, password: String, callbac
         "read_only": false
     ]
 
-    Alamofire.request(.POST, "http://api.muninapp.com/tokens/", parameters: parameters as? [String : AnyObject])
+    Alamofire.request(.POST, "https://api.muninapp.com/tokens/", parameters: parameters as? [String : AnyObject])
         .responseJSON { response in
             debugPrint(response)
 
@@ -90,7 +90,7 @@ func recordDataPoint(endpoint: String, data: [String: AnyObject], callback: ((su
         debugPrint(data)
         debugPrint(headers)
 
-        Alamofire.request(.POST, "http://api.muninapp.com/\(endpoint)/", parameters: data, headers: headers)
+        Alamofire.request(.POST, "https://api.muninapp.com/\(endpoint)/", parameters: data, headers: headers)
             .responseJSON { response in
                 log.debug(response.debugDescription)
                 log.info(response.description)
