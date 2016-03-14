@@ -16,27 +16,49 @@
 
 import UIKit
 import XCGLogger
+import SwiftyUserDefaults
 
 class LocationTableViewController: UITableViewController {
     private var kvoContext: UInt8 = 1
     
     @IBOutlet var latitudeLabel: UILabel!
     @IBOutlet var longitudeLabel: UILabel!
-        
+
+    @IBOutlet var enabledSwitch: UISwitch!
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+
+        enabledSwitch.addTarget(self, action: Selector("enableSwitchToggled:"), forControlEvents: UIControlEvents.ValueChanged)
+        enabledSwitch.setOn(locationData.enabled, animated: true)
         
+        if !locationData.enabled {
+            latitudeLabel.text = "Disabled"
+            longitudeLabel.text = "Disabled"
+        }
+
         locationData.addObserver(self, forKeyPath: "currentLocation", options: NSKeyValueObservingOptions([.New, .Old]), context: &kvoContext)
     }
-    
+
+    func enableSwitchToggled(switchState: UISwitch) {
+        if switchState.on {
+            locationData.enableService()
+            latitudeLabel.text = "Loading"
+            longitudeLabel.text = "Loading"
+        } else {
+            locationData.disableService()
+            latitudeLabel.text = "Disabled"
+            longitudeLabel.text = "Disabled"
+        }
+    }
+
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
         locationData.removeObserver(self, forKeyPath: "currentLocation")
     }
-    
+
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        print("Value change observed!")
         if context == &kvoContext {
             if let coordinate = locationData.currentLocation?.coordinate {
                 latitudeLabel.text = coordinate.latitude.description
@@ -44,11 +66,9 @@ class LocationTableViewController: UITableViewController {
             }
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    
+
 }

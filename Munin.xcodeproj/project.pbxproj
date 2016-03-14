@@ -26,6 +26,7 @@
 		21F9404E1C961749009F4E47 /* MuninNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F9404D1C961749009F4E47 /* MuninNavigationController.swift */; };
 		21F940691C962A56009F4E47 /* pin-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F940671C962A56009F4E47 /* pin-marker.png */; };
 		21F9406A1C962A56009F4E47 /* pin-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F940681C962A56009F4E47 /* pin-marker@2x.png */; };
+		21F9406B1C962FA3009F4E47 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219E3EB21C95554800B5722B /* SwiftyUserDefaults.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 				21247F7A1C8F785B00C32DFB /* Locksmith.framework in Frameworks */,
 				21D52D141C939CA900268AA2 /* XCGLogger.framework in Frameworks */,
 				219E3EB51C95765D00B5722B /* KeychainSwift.framework in Frameworks */,
+				21F9406B1C962FA3009F4E47 /* SwiftyUserDefaults.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +336,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 			);
 			outputPaths = (
 			);

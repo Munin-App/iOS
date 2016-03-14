@@ -223,6 +223,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Location" id="nwS-7L-rqG"/>
                     <connections>
+                        <outlet property="enabledSwitch" destination="WfP-Nf-sry" id="r4K-D0-LIN"/>
                         <outlet property="latitudeLabel" destination="ItH-2a-JVB" id="zdd-h3-T1C"/>
                         <outlet property="longitudeLabel" destination="xRH-Pc-BHs" id="ea8-OU-dsu"/>
                     </connections>
